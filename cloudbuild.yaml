@@ -7,7 +7,6 @@ args: ["push", "gcr.io/$PROJECT_ID/angular8-application"]
 - name: "gcr.io/cloud-builders/gcloud"
 args:
 [
-"beta",
 "run",
 "deploy",
 "--allow-unauthenticated",
