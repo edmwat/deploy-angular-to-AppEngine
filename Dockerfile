@@ -1,12 +1,3 @@
-FROM node:12.16.1-alpine As builder
-WORKDIR /usr/src/app
-COPY package.json package-lock.json ./
-RUN npm install
-COPY . .
-RUN npm run build --prod
-CMD ng serve --host 0.0.0.0 --port $PORT
-
-
 ### STAGE 1: Build ###
 # We label our stage as ‘builder’
 FROM node as builder
