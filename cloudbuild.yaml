@@ -1,6 +1,6 @@
 steps:
 - name: "gcr.io/cloud-builders/docker"
-args: ["build", "--tag", "gcr.io/cloudrun-327419/angular8-application", "."]
+args: ["build", "-t", "gcr.io/cloudrun-327419/angular8application", "-f", "./Dockerfile", "."]
 - name: "gcr.io/cloud-builders/docker"
 args: ["push", "gcr.io/cloudrun-327419/angular8-application"]
 - name: "gcr.io/cloud-builders/gcloud"

@@ -14,9 +14,9 @@ export class AppComponent {
   constructor(private jibtestService:JibtestService){
   }
   ngOnInit(){
-    this.jibtestService.getGreetings().subscribe(result=>{
+    /* this.jibtestService.getGreetings().subscribe(result=>{
       this.greetings = result;
-    });
+    }); */
     
   }
 
