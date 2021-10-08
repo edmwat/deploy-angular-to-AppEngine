@@ -11,6 +11,6 @@ export class JibtestService {
    }
 
   getGreetings():Observable<any>{
-    return this.httpClient.get("https://jibtest3-lhefrhbyia-uc.a.run.app/api/home");
+    return this.httpClient.get("https://jibtest-lhefrhbyia-uc.a.run.app/api/home");
   }
 }
